@@ -1,0 +1,73 @@
+body {
+	background-color: #131313;
+	overflow: hidden;
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+	color: #565656;
+
+}
+#app {
+	margin-top: 5%;
+	
+}
+
+hr {
+	border-top: 1px solid #B9B9B9;
+}
+.list {
+	margin: 0px;
+	padding: 0px;
+	.task {
+		display: block;
+		font-weight: 600;
+		.checkBox.complete {
+			background-color: #8BC34A;
+		}
+	}
+	.complete {
+		text-decoration: line-through;
+		color: gray;
+	}
+}
+
+.checkBox {
+	margin: -2px 15px;
+	width: 15px;
+	height: 15px;
+	border:solid 1px;
+	border-radius: 50%;
+	display: inline-block;
+}
+
+.addTaskBox {
+	border-radius: 20px;
+	border: solid 1px green;
+}
+.addTask {
+	border: none;
+    background: transparent;
+    font-style: italic;
+	width: 60%;
+	margin-left: 45px;
+    &:focus {
+    	outline: none;
+    }
+}
+
+@media (max-width: 510px) {
+	.toDoHeader {
+		text-align: center;
+	}
+	body {
+		font-size: 20px;
+	}
+	.well {
+		.btn {
+			@media (max-width: 510px) {
+				width: 100%;
+			    margin-top: 20px;
+			    float: none !important;
+			}
+		}
+	}
+}
