@@ -20,8 +20,12 @@ hr {
 	.task {
 		display: block;
 		font-weight: 600;
+		margin-top: 6px;
+		hr {
+			margin: 5px;
+		}
 		.checkBox.complete {
-			background-color: #8BC34A;
+			background-color: gray;
 		}
 	}
 	.complete {
@@ -32,11 +36,24 @@ hr {
 
 .checkBox {
 	margin: -2px 15px;
-	width: 15px;
-	height: 15px;
-	border:solid 1px;
-	border-radius: 50%;
-	display: inline-block;
+    width: 14px;
+    height: 14px;
+    border: solid 1px;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: inset 0px 0.7px 1px #0D3E0F;
+
+	&:after {
+		width: 19px;
+		height: 19px;
+		border: 1px #E0E0E0;
+		border-style: outset;
+		border-radius: 50%;
+		content: "";
+		position: absolute;
+		margin-left: -3px;
+		margin-top: -3px;
+	}
 }
 
 .addTaskBox {

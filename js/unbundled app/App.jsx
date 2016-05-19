@@ -117,6 +117,7 @@ var ToDoTask = React.createClass({
 		return (
 			<li className={taskClass}>
 				<div className={checkBoxClass} onClick={this.toggleComplete}></div>{this.props.task}
+				<hr></hr>
 			</li>
 
 		);

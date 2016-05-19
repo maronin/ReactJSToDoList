@@ -20165,7 +20165,8 @@
 				'li',
 				{ className: taskClass },
 				_react2.default.createElement('div', { className: checkBoxClass, onClick: this.toggleComplete }),
-				this.props.task
+				this.props.task,
+				_react2.default.createElement('hr', null)
 			);
 		}
 	});

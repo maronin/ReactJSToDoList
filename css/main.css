@@ -26,34 +26,52 @@ hr {
 .list .task {
   display: block;
   font-weight: 600;
+  margin-top: 6px;
 }
-/* line 23, ../sass/main.scss */
-.list .task .checkBox.complete {
-  background-color: #8BC34A;
+/* line 24, ../sass/main.scss */
+.list .task hr {
+  margin: 5px;
 }
 /* line 27, ../sass/main.scss */
+.list .task .checkBox.complete {
+  background-color: gray;
+}
+/* line 31, ../sass/main.scss */
 .list .complete {
   text-decoration: line-through;
   color: gray;
 }
 
-/* line 33, ../sass/main.scss */
+/* line 37, ../sass/main.scss */
 .checkBox {
   margin: -2px 15px;
-  width: 15px;
-  height: 15px;
+  width: 14px;
+  height: 14px;
   border: solid 1px;
   border-radius: 50%;
   display: inline-block;
+  box-shadow: inset 0px 0.7px 1px #0D3E0F;
+}
+/* line 46, ../sass/main.scss */
+.checkBox:after {
+  width: 19px;
+  height: 19px;
+  border: 1px #E0E0E0;
+  border-style: outset;
+  border-radius: 50%;
+  content: "";
+  position: absolute;
+  margin-left: -3px;
+  margin-top: -3px;
 }
 
-/* line 42, ../sass/main.scss */
+/* line 59, ../sass/main.scss */
 .addTaskBox {
   border-radius: 20px;
   border: solid 1px green;
 }
 
-/* line 46, ../sass/main.scss */
+/* line 63, ../sass/main.scss */
 .addTask {
   border: none;
   background: transparent;
@@ -61,24 +79,24 @@ hr {
   width: 60%;
   margin-left: 45px;
 }
-/* line 52, ../sass/main.scss */
+/* line 69, ../sass/main.scss */
 .addTask:focus {
   outline: none;
 }
 
 @media (max-width: 510px) {
-  /* line 58, ../sass/main.scss */
+  /* line 75, ../sass/main.scss */
   .toDoHeader {
     text-align: center;
   }
 
-  /* line 61, ../sass/main.scss */
+  /* line 78, ../sass/main.scss */
   body {
     font-size: 20px;
   }
 }
 @media (max-width: 510px) and (max-width: 510px) {
-  /* line 65, ../sass/main.scss */
+  /* line 82, ../sass/main.scss */
   .well .btn {
     width: 100%;
     margin-top: 20px;
